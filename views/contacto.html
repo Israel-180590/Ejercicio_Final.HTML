@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos que usará la página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilos/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>LECO REFORMAS</title>
+
+
+</head>
+
+<!-- Cuerpo de la página -->
+
+<body>
+    <header class="fondo_cabecera">
+        <img src="../imagenes/leco.jpg" alt="Leco reformas" class="banner">
+        <div>
+            <!-- Barra de navegación -->
+            <nav aria-label="Menú principal">
+                <div class="menu">
+                    <span>
+                        <a href="../index.html" class="boton">Inicio</a>
+                    </span>
+                    <span>
+                        <a href="../views/Galeria.html" class="boton">Galeria</a>
+                    </span>
+                    <span>
+                        <a href="../views/Presupuesto.html" class="boton">Presupuesto</a>
+                    </span>
+                    <span>
+                        <a href="../views/contacto.html" class="boton">Contacto</a>
+                    </span>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <div class="contenido-degradado">
+        <main>
+            <section class="parrafo1">
+                <h1>Contactanos</h1>
+
+                Si deseas ponerte en contacto con nosotros, puedes hacerlo a través del siguiente formulario. Estaremos
+                encantados de atenderte y responder a todas tus preguntas o solicitudes de información.<br><br>
+
+            </section>
+
+
+            <form action="../views/gracias.html" method="post" class="formulario">
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+
+                    <label for="cnombre">Nombre:</label><br>
+                    <input type="text" id="cnombre" name="cnombre" required><br><br>
+
+                    <label for="cemail">Correo Electrónico:</label><br>
+                    <input type="email" id="cemail" name="cemail" required><br><br>
+
+                    <label for="ctelefono">Teléfono:</label><br>
+                    <input type="tel" id="ctelefono" name="ctelefono"><br><br>
+
+                    <label for="cmensaje">Mensaje:</label><br>
+                    <textarea id="cmensaje" name="cmensaje" rows="5" required></textarea><br><br>
+
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" name="cborrar" id="cborrar" value="Borrar">
+                </fieldset>
+
+            </form>
+            <section class="imagen_maps" aria-labelledby="contacto-mapa">
+                <h5 id="contacto-mapa">También puedes contactarnos a través de los siguientes medios: </h5>
+
+                <a href="https://maps.app.goo.gl/eYiV2LaYC3bJoBB88" target="_blank">
+                    <img src="../imagenes/ubicacion_empresa.png" alt="ubicacion empresa" width="886" height="567">
+                </a>
+                <address>
+                    Dirección: Calle Germans Lluna 4, Valencia, España<br>
+                    Teléfono: +34 123 456 789<br>
+                    Correo Electrónico:<a href="mailto:leco@reformas.com">leco@reformas.com</a>
+                </address>
+
+            </section>
+        </main>
+
+        <footer class="footer">
+
+            Leco reformas &copy; 2024
+            <!-- Enlaces a redes sociales -->
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-square-facebook logo_icon "></i>
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-square-instagram logo_icon"></i>
+            </a>
+
+            <a href="https://maps.app.goo.gl/eYiV2LaYC3bJoBB88" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-map-location-dot logo_icon"></i>
+            </a>
+
+            <a href="./views/aviso_legal.html" target="_blank" rel="noopener noreferrer">Aviso Legal</a>
+
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos que usará la página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilos/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>LECO REFORMAS</title>
+
+
+</head>
+
+<!-- Cuerpo de la página -->
+
+<body>
+    <header class="fondo_cabecera">
+        <img src="../imagenes/leco.jpg" alt="Leco reformas" class="banner">
+        <div>
+            <!-- Barra de navegación -->
+            <nav aria-label="Menú principal">
+                <div class="menu">
+                    <span>
+                        <a href="../index.html" class="boton">Inicio</a>
+                    </span>
+                    <span>
+                        <a href="../views/Galeria.html" class="boton">Galeria</a>
+                    </span>
+                    <span>
+                        <a href="../views/Presupuesto.html" class="boton">Presupuesto</a>
+                    </span>
+                    <span>
+                        <a href="../views/contacto.html" class="boton">Contacto</a>
+                    </span>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <div class="contenido-degradado">
+        <main>
+            <section class="titulo_empresa">
+                <h1>Solicita tu presupuesto</h1>
+                Si estás interesado en nuestros servicios de reformas, no dudes en solicitar un presupuesto
+                personalizado.
+                Rellena el siguiente formulario con los detalles de tu proyecto y nos pondremos en contacto contigo lo
+                antes
+                posible.
+            </section>
+
+
+            <form action="../views/gracias.html" method="post" class="formulario">
+                <!-- Aquí van los campos -->
+
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,50}"
+                        title="El nombre solo puede contener letras y espacios (mínimo 2 caracteres)"><br><br>
+
+
+
+
+                    <label for="correo">Correo Electrónico:</label><br>
+                    <input type="email" id="correo" name="correo" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        title="Ingrese un correo electrónico válido"><br><br>
+
+
+                    <label for="telefono">Teléfono:</label><br>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9,15}"
+                        title="Ingrese un número de teléfono válido (9 a 15 dígitos)"><br><br>
+
+
+                    <label for="descripcion">Descripción del Proyecto:</label><br>
+                    <textarea   id="descripcion" name="descripcion" rows="5" required></textarea><br><br>
+
+                    <label class="acepto">
+                        <input type="checkbox" id="acepto" name="acepto" required>
+                        Acepto la política de privacidad y el tratamiento de mis datos personales.<br><br>
+                    </label>
+
+                    <input type="submit" value="Solicitar Presupuesto">
+                    <input type="reset" name="borrar" id="borrar" value="Borrar">
+                </fieldset>
+
+            </form>
+
+            <div  style="text-align: center;">
+                 <h3>Si tienes un presupuesto, TE LO MEJORAMOS!</h3>
+            </div>
+
+           
+        </main>
+
+        <!-- Pie de página -->
+        <footer class="footer">
+
+            Leco reformas &copy; 2024
+            <!-- Enlaces a redes sociales -->
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-square-facebook logo_icon "></i>
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-square-instagram logo_icon"></i>
+            </a>
+
+            <a href="https://maps.app.goo.gl/eYiV2LaYC3bJoBB88" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-map-location-dot logo_icon"></i>
+            </a>
+
+            <a href="./views/aviso_legal.html" target="_blank" rel="noopener noreferrer">Aviso Legal</a>
+
+
+        </footer>
+    </div>
+</body>
+
+</html>

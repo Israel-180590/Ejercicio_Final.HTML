@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+/* Estilos generales */
+
+
+/*estilo de la imagen de caberera*/
+
+.fondo_cabecera {
+    background-color: #f5f5f5;
+}
+
+.banner {
+    width: 99%;
+    height: 215px;
+    display: block;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Cambio de color del cuerpo de la página */
+.margen_body {
+    border: 2px solid rgb(42, 223, 223);
+
+}
+
+.contenido-degradado {
+    background: linear-gradient(to bottom, #f5f5f5 0%, #888888 50%, #000000 100%);
+    padding: 40px 20px;
+    color: #d3d3d3;
+    /* texto claro para contraste en fondo oscuro */
+}
+
+
+
+/* Estilo para los encabezados */
+.parrafo1 {
+    color: black;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/* Estilo para los párrafos */
+
+.parrafo2 {
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px;
+    padding: 40px 20px;
+    line-height: 1.6;
+}
+
+.parrafo3 {
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px;
+    padding: 40px 20px;
+    line-height: 1.6;
+}
+
+.parrafo4 {
+    color: #f5f5f5;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px;
+    padding: 40px 20px;
+    line-height: 1.6;
+}
+
+
+
+
+/* Estilo para el menu de navegación */
+.menu {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+
+}
+
+/* Estilo para los botones */
+.boton {
+    width: 310px;
+    background-color: rgb(42, 223, 223);
+    border: 1px solid rgb(42, 223, 223);
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 22px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 12px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #10beca;
+    /* fondo más oscuro al pasar el cursor */
+    color: black;
+    /* texto negro al pasar el cursor */
+}
+
+.footer {
+
+    font-size: 15px;
+    border: 2px solid rgb(42, 223, 223);
+    /* Borde visible */
+    color: blanchedalmond;
+    margin: 2%;
+    padding: 8px;
+}
+
+
+/* Estilo para los logos de redes sociales en el footer */
+.logo_icon {
+  font-size: 30px;
+  color: gray; /* o el color de tu paleta */
+  margin: 15px;
+}
+
+.label {
+    color: blanchedalmond;
+    font-size: 10px;
+}
+
+.imagenes {
+    width: 350px;
+    height: auto;
+    margin: 10px;
+    border: 5px solid rgb(42, 223, 223);
+    /* Borde visible */
+    padding: 5px;
+}
+
+.imagen_maps img {
+    width: 300px;
+    height: 150px;
+}
+
+.tabla {
+    width: 90%;
+    margin: auto;
+    border: 2px solid rgb(42, 223, 223);
+    /* Borde visible */
+    padding: 10px;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+.formulario {
+    width: 50%;
+    margin: auto;
+    border: 2px solid rgb(42, 223, 223);
+    /* Borde visible */
+    padding: 10px;
+    color: black;
+    text-align: left;
+    
+}
+
+
+.mensaje {
+    width: 50%;
+    margin: auto;
+    border: 2px solid rgb(42, 223, 223);
+    /* Borde visible */
+    padding: 10px;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+
+
+/* Layout general con Flex */
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  grid-template-rows: repeat(2, auto);   /* 2 filas automáticas */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.imagenes {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
